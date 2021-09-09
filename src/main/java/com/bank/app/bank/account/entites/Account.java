@@ -33,13 +33,12 @@ public class Account {
 
 	/**
 	 * Constructor
-	 * @param amount
 	 * @param balance
+	 * @param amount
 	 */
-	public Account(Double amount, Balance balance) {
-		this.amount = amount;
+	public Account(Balance balance, Double amount) {
 		this.balance = balance;
-		
+		this.amount = amount;		
 	}
 
 	/**

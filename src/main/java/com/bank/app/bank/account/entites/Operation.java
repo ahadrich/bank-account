@@ -26,7 +26,7 @@ public class Operation {
 	/**
 	 * The amount of the operation
 	 */
-	private Double amount;
+	private double amount;
 	
 	/**
 	 * Constructor
@@ -41,10 +41,11 @@ public class Operation {
 	 * @param account the user account
 	 * @param amount the amount of the operation
 	 */
-	public Operation(OperationType type, Account account, Double amount) {
+	public Operation(OperationType type, Account account, double amount) {
 		this.operationType = type;
 		this.account = account;
 		this.amount = amount;
+		this.date = new Date();
 		
 	}
 
@@ -93,14 +94,14 @@ public class Operation {
 	/**
 	 * @return the amount
 	 */
-	public Double getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 
 	/**
 	 * @param amount the amount to set
 	 */
-	public void setAmount(Double amount) {
+	public void setAmount(double amount) {
 		this.amount = amount;
 	}
 	
