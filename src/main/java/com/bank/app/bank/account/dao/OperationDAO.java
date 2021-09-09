@@ -15,23 +15,21 @@ public class OperationDAO extends DAO<Operation>{
 		return op;
 	}
 	
-	public List<Operation> findByAccount(long account){
+	public List<Operation> findByAccount(String account){
 		// TODO : implement the data base access to retrieve Operations of the given account
 		return new ArrayList<Operation>();
 	}
 
 	@Override
 	public Operation create(Operation obj) {
-		Operation op = new Operation();
 		// TODO : implement the data base access to create a new Operation
-		return op;
+		return obj;
 	}
 
 	@Override
 	public Operation update(Operation obj) {
-		Operation op = new Operation();
 		// TODO : implement the data base access to update the given Operation
-		return op;
+		return obj;
 	}
 
 }
