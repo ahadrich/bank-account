@@ -1,4 +1,4 @@
-package com.bank.app.bank_account;
+package com.bank.app.bank.account;
 
 import static org.junit.Assert.assertTrue;
 
