@@ -8,6 +8,11 @@ import com.bank.app.bank.account.entites.Operation;
 import com.bank.app.bank.account.entites.OperationType;
 import com.bank.app.bank.account.services.IOperationService;
 
+/**
+ * Operation Service implementation 
+ * @author ahadrich
+ *
+ */
 public class OperationServiceImpl implements IOperationService{
 
 	@Override
@@ -30,6 +35,14 @@ public class OperationServiceImpl implements IOperationService{
 		
 	}
 	
+	/**
+	 * Update the Amount of the account according to the type of the Operation
+	 * @param account
+	 * @param type
+	 * @param amount
+	 * @return Operation 
+	 * @throws Exception
+	 */
 	private Operation updateAmount(Account account, OperationType type, double amount) throws Exception {
 		
 		double newAmount = account.getAmount();

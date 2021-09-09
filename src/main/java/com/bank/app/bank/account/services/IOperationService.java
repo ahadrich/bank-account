@@ -1,12 +1,13 @@
 package com.bank.app.bank.account.services;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.bank.app.bank.account.dao.OperationDAO;
 import com.bank.app.bank.account.entites.Account;
 import com.bank.app.bank.account.entites.Operation;
 
+/**
+ * Operation Services
+ * @author ahadrich
+ *
+ */
 public interface IOperationService {
  
 	/**
